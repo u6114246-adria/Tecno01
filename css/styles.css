@@ -1,0 +1,172 @@
+:root {
+  --orange: #fcb782;
+  --light-orange: #faefe3;
+  --electric-orange: #fe6e06;
+  --dark-grey: #333333;
+  --white: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; /*treu tots els margin i padding i despres els fiques tu manualment*/
+}
+
+body {
+  background-color: var(--orange);
+}
+.hero {
+  padding: 67px;
+}
+.container {
+  border: black 1px solid;
+  display: flex;
+  max-width: 1312px;
+  margin: auto;
+}
+.column {
+  width: 50%;
+  border: 1px solid red;
+}
+.heading-box {
+  margin-top: 70px;
+  display: flex; /*els seus fills es mostren de canto*/
+  align-items: center; /*els seus fills es mostren al centre*/
+}
+.heading-box .badge:hover .text-badge {
+  animation-play-state: running; /*quan passes el ratoli per sobre, que es mogui*/
+}
+.heading-box .badge .text-badge {
+  animation: rotate linear 5s infinite; /*infinite: que es repeteixi infinitament*/
+  animation-play-state: paused; /*per defecte, que no es mogui*/
+  transform-origin: center; /*el centre de l'element es el que gira*/
+}
+.text {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 40px 0; /*padding: 40 dalt baix 0 dreta esquerra*/
+}
+.button a {
+  background-color: var(--electric-orange);
+  border-radius: 40px;
+  padding: 24px 40px;
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+  transition: 0.3s all; /*quan canvies de color, que trigui 0.3 segon*/
+}
+.button a:hover {
+  background-color: var(--dark-grey);
+  transform: scale(1.05);
+}
+.card-wrapper {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+h1 {
+  font-size: 112px;
+  font-family: Times New Roman;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 108px;
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  margin: 0;
+}
+.text p {
+  font-size: 24px;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+.normal {
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.card {
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  border-radius: 24px;
+  padding: 16px;
+  gap: 8px;
+  background-color: var(--light-orange);
+}
+.button a {
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: 30px;
+}
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+i {
+  color: var(--orange);
+  font-size: 18px;
+}
+.card-title h3 {
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
+.column img.shape {
+  height: 825px;
+  align-self: stretch;
+  margin-top: 50px;
+  background-image: url("img/shape.png");
+}
+.column img.toy {
+  height: 825px;
+  align-self: stretch;
+  margin-top: 50px;
+}
+
+/*ANIMACIONS*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
