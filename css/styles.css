@@ -15,22 +15,18 @@ p {
   margin: 0;
   padding: 0; /*treu tots els margin i padding i despres els fiques tu manualment*/
 }
-
-body {
-  background-color: var(--orange);
-}
 .hero {
   padding: 67px;
+  background: linear-gradient(180deg, #fcb782 85%, #fff 85%, #fff 100%);
 }
 .container {
-  border: black 1px solid;
   display: flex;
   max-width: 1312px;
   margin: auto;
 }
 .column {
   width: 50%;
-  border: 1px solid red;
+  position: relative;
 }
 .heading-box {
   margin-top: 70px;
