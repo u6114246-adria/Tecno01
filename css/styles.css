@@ -160,6 +160,23 @@ i {
   align-self: stretch;
   margin-top: 50px;
 }
+.shape {
+  position: absolute;
+  right: 0;
+  border-radius: 0 0 400px 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  width: 580px;
+  height: 790px;
+  z-index: 0;
+}
+.toy {
+  position: relative;
+  z-index: 1;
+}
 
 /*ANIMACIONS*/
 @keyframes rotate {
