@@ -190,12 +190,13 @@ h1 {
 }
 .projects {
   display: flex;
-  align-items: center;
-  margin-top: 141px;
-  margin-bottom: 141px;
-  gap: 51px; /* espai entre caixes */
-  align-self: stretch;
-  max-width: 1312px;
+  width: 1312px;
+  height: 386px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 51px;
+  grid-row: span 1;
+  grid-column: span 1;
 }
 .projects .project {
   border-radius: 32px;
