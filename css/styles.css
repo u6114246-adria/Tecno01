@@ -185,6 +185,7 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   max-width: 100%;
+  padding: 119px 64px 64px 64px;
 }
 .projects {
   display: flex;
