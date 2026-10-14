@@ -190,7 +190,7 @@ h1 {
 }
 .projects {
   display: flex;
-  width: 1312px;
+  max-width: 1312px;
   height: 386px;
   justify-content: center;
   align-items: flex-start;
