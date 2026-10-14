@@ -195,6 +195,7 @@ h1 {
   margin-bottom: 141px;
   gap: 51px; /* espai entre caixes */
   align-self: stretch;
+  max-width: 1312px;
 }
 .projects .project {
   border-radius: 32px;
