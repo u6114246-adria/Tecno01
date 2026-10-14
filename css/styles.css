@@ -296,6 +296,7 @@ h1 {
 }
 .boto {
   margin-top: 141px;
+  padding-top: 141px;
 }
 .boto p {
   color: white;
@@ -414,6 +415,7 @@ h1 {
 }
 .works h1 {
   margin-bottom: 141px;
+  padding-bottom: 141px;
 }
 
 /*ANIMACIONS*/
