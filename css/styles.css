@@ -196,6 +196,7 @@ h1 {
   gap: 51px;
   grid-row: span 1;
   grid-column: span 1;
+  padding: 119px 64px 64px 64px;
 }
 .projects .project {
   border-radius: 32px;
